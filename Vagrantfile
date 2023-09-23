@@ -52,7 +52,7 @@ Vagrant.configure(2) do |config|
       workernode.vm.network "private_network", ip: "172.16.16.20#{i}"
       workernode.vm.provider :virtualbox do |v|
         v.name   = "kworker#{i}"
-        v.memory  = 2048
+        v.memory  = 1024
         v.cpus    = 1
       end
     end
